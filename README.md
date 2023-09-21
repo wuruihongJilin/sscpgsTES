@@ -1,2 +1,2 @@
-# sscTTME
- single sample classifier based on tumor and tumor microenviroments for hepatocellular carcinoma
+# sscpgsTES
+ single-sample classifier based on the paired genes for predicting tumor ecosystem subtypes of hepatocellular carcinoma
