@@ -8,22 +8,15 @@ Exp, a dataframe with mRNA expression profiles, samples in columns, genes in row
 
 
 rm(list=ls())
-##source the program get_sscTTME_subtypes.R
-source("code/get_sscTTME_subtypes.R")
-
-##create a directory for saving the result
+source("code/get_sscTTME_subtypes.R")#source the program get_sscTTME_subtypes.R
 savedir <- "E:/sscpgsTES/"
-dir.create(savedir)
+dir.create(savedir)#create a directory for saving the result
 
-##load the mRNA expression data frame
-
-log2expdata <- readRDS(paste0(datadir,"CHCC_HBV_proteincoding_UQFPKMtolog2p1_19539_159Tumor_maxMAD.RData"))
+log2expdata <- readRDS(paste0(datadir,"CHCC_HBV_proteincoding_UQFPKMtolog2p1_19539_159Tumor_maxMAD.RData"))#load the mRNA expression data frame
 cursavename <- "CHCC_HBV"#the dataset name
 
-## load the paired genes of this classifier
-pairgenelist <- readRDS(paste0(datadir,"SSC_MAD1500pless0.001degree1_orderbyPvalueTOP130_Fscore_pairgenelist_degreeless1.rds"))
+pairgenelist <- readRDS(paste0(datadir,"SSC_MAD1500pless0.001degree1_orderbyPvalueTOP130_Fscore_pairgenelist_degreeless1.rds"))#load the paired genes of this classifier
 
-## predict the subtypes, the result file will be stored in the savedir
-results <- get_sscTTME_subtypes(log2expdata,pairgenelist,savedir,savename=cursavename)
+results <- get_sscTTME_subtypes(log2expdata,pairgenelist,savedir,savename=cursavename)#predict the subtypes, the result file will be stored in the savedir
 
 
