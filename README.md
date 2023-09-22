@@ -3,10 +3,7 @@
 # Data input
 Exp, a dataframe with mRNA expression profiles, samples in columns, genes in rows, rownames corresponding to Gene symbols. It requires log2 transformed RPKM/FPKM/TPM level data for RNA-seq dataset, and log2 level data ( after RMA or quantile normalization) for microarray data.
 
-# An example
-## for CHCC HBV dataset
-
-
+# An example using CHCC-HBV dataset
 rm(list=ls())
 source("code/get_sscTTME_subtypes.R")#source the program get_sscTTME_subtypes.R
 savedir <- "E:/sscpgsTES/"
@@ -19,4 +16,7 @@ pairgenelist <- readRDS(paste0(datadir,"SSC_MAD1500pless0.001degree1_orderbyPval
 
 results <- get_sscTTME_subtypes(log2expdata,pairgenelist,savedir,savename=cursavename)#predict the subtypes, the result file will be stored in the savedir
 
-
+# Contact email
+Please don't hesitate to address comments/questions/suggestions regarding this classifer and datasets to: 
+the Corresponding authors: Yunpeng Zhang; Shangwei Ning; Xia Li. College of Bioinformatics Science and Technology, Harbin Medical University, Harbin, Heilongjiang; E-mail: zhangyp@hrbmu.edu.cn (Yunpeng Zhang); ningsw@ems.hrbmu.edu.cn (Shangwei Ning); lixia@hrbmu.edu.cn (Xia Li)
+or the first author, Ruihong Wu, by wuruihong@jlu.edu.cn
