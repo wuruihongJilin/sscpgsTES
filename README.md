@@ -5,8 +5,11 @@ log2expdata, a dataframe with mRNA expression profiles, samples in columns, gene
 
 # An example using CHCC-HBV dataset
 rm(list=ls())
+
 source("code/get_sscTTME_subtypes.R")#source the program get_sscTTME_subtypes.R
+
 savedir <- "E:/sscpgsTES/"
+
 dir.create(savedir)#create a directory for saving the result
 
 log2expdata <- readRDS("CHCC_HBV_proteincoding_UQFPKMtolog2p1_19539_159Tumor_maxMAD.RData")#load the mRNA expression data frame
