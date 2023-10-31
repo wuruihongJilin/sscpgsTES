@@ -23,3 +23,6 @@ results <- get_sscTTME_subtypes(log2expdata,pairgenelist,savedir,savename=cursav
 Please don't hesitate to address comments/questions/suggestions regarding this classifer and datasets to: 
 the Corresponding authors: Yunpeng Zhang; Shangwei Ning; Xia Li. College of Bioinformatics Science and Technology, Harbin Medical University, Harbin, Heilongjiang; E-mail: zhangyp@hrbmu.edu.cn (Yunpeng Zhang); ningsw@ems.hrbmu.edu.cn (Shangwei Ning); lixia@hrbmu.edu.cn (Xia Li)
 or the first author, Ruihong Wu, by wuruihong@jlu.edu.cn
+
+# Citation
+Please cite: Tumor biology, immune infiltration and liver function define seven hepatocellular carcinoma subtypes linked to distinct drivers, survival and drug response. Computers in Biology and Medicine. Volume 167, December 2023, 107593. https://www.sciencedirect.com/science/article/pii/S0010482523010582?dgcid=coauthor
